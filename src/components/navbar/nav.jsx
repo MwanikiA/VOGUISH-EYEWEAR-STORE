@@ -10,18 +10,20 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
-          <Link to="/login" className="nav-link">
+          <div className="nav-link">
             <FaUser className="nav-icon" />
-            <p>Log-in</p>
-          </Link>
+            <Link to="/loginmain"> <p>Log-in</p></Link>/<Link to="/registermain"> <p>Register</p></Link>
+          </div>
           <Link to="/wishlist" className="nav-link">
             <FaHeart className="nav-icon" />
             <p>Wishlist</p>
           </Link>
         </div>
-          <div className="logo-container">
+          
+          <Link to={"/"} className="logo-container">
             <img src={Logo} alt="Logo" className="logo" />
-          </div>
+          </Link>
+          
         
         <div className="navbar-right">
           <div className="dropdown">
